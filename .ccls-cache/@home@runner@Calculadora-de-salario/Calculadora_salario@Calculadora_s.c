@@ -9,8 +9,8 @@ int main(void) {
 
 
 int ano_contrataçao, ano_atual, salario_base ;
-  const char porc_bonus = 0.02 ;
-  const char reajuste = 0.05;
+  const float porc_bonus = 0.02 ;
+  const float reajuste = 0.05;
   
   printf("Digite o ano de contratação: ");
   scanf("%d",& ano_contrataçao);
@@ -30,11 +30,13 @@ int ano_contrataçao, ano_atual, salario_base ;
   for (i = ano_contrataçao; i <= ano_atual; i++) {
     salario_base = salario_base + (salario_base * porc_bonus);
 
+   
+    
   }
     
    
   
-  printf( "Seu salario atual é : %d", salario_base); 
+  printf( "Seu salario atual é : %.1lf", salario_base); 
   
 
 
