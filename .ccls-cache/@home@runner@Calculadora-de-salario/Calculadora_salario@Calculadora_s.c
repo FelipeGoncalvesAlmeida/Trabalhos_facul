@@ -24,7 +24,6 @@ int ano_contrataçao, ano_atual, salario_base, porc_bonus ;
   scanf(" %d", &porc_bonus);
   
   
-  
 
 
 
