@@ -8,9 +8,10 @@
 int main(void) {
 
 
-int ano_contrataçao, ano_atual, salario_base, porc_bonus ;
- 
-
+int ano_contrataçao, ano_atual, salario_base ;
+  const char porc_bonus = 0.02 ;
+  const char reajuste = 0.05;
+  
   printf("Digite o ano de contratação: ");
   scanf("%d",& ano_contrataçao);
 
@@ -20,16 +21,22 @@ int ano_contrataçao, ano_atual, salario_base, porc_bonus ;
   printf("Digite o salário base: ");
   scanf("%d", &salario_base);
 
-  printf( "Digite a porcentagem de bônus: ");
-  scanf(" %d", &porc_bonus);
-  
-  
-  
-
-
-
-
-
+  if (ano_atual == ano_contrataçao ) {
+    printf ("Para calcuar seu aumento, seu ano de contratação não deve ser o mesmo do ano atual");
+  }
 
   
+  int i;
+  for (i = ano_contrataçao; i <= ano_atual; i++) {
+    salario_base = salario_base + (salario_base * porc_bonus);
+
+  }
+    
+   
+  
+  printf( "Seu salario atual é : %d", salario_base); 
+  
+
+
+
 }
